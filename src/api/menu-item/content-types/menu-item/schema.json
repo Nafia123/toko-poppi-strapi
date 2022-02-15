@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menu_items",
+  "info": {
+    "singularName": "menu-item",
+    "pluralName": "menu-items",
+    "displayName": "MenuItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menuName": {
+      "type": "string",
+      "unique": true
+    },
+    "menuDish": {
+      "displayName": "MenuDescription",
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-description.menu-description"
+    },
+    "menuPrice": {
+      "type": "decimal"
+    },
+    "menuImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "visible": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

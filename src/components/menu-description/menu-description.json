@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_menu_description_menu_descriptions",
+  "info": {
+    "displayName": "MenuDescription",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dishName": {
+      "type": "string"
+    },
+    "dishDescription": {
+      "type": "string"
+    },
+    "dishOptions": {
+      "displayName": "DishOptions",
+      "type": "component",
+      "repeatable": true,
+      "component": "dish-options.dish-options",
+      "max": 3
+    }
+  }
+}

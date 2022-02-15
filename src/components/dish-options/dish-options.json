@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_dish_options_dish_options",
+  "info": {
+    "displayName": "DishOptions",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dishOption": {
+      "type": "string"
+    }
+  }
+}
