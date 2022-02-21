@@ -108,6 +108,7 @@ coverage
 
 .env
 license.txt
+package-lock.json
 exports
 *.cache
 build
