@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_delivery_delivery_informations",
+  "info": {
+    "displayName": "deliveryInformation",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    }
+  }
+}

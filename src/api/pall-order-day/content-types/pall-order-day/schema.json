@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "pall_order_days",
+  "info": {
+    "singularName": "pall-order-day",
+    "pluralName": "pall-order-days",
+    "displayName": "pallOrderDay",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "monday": {
+      "displayName": "orderTime",
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "tuesday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "wednesday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "thursday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "friday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "saturday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "sunday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    }
+  }
+}
