@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_dish_options_allergens",
+  "info": {
+    "displayName": "allergens",
+    "icon": "fish"
+  },
+  "options": {},
+  "attributes": {
+    "allergens": {
+      "type": "enumeration",
+      "enum": [
+        "Gluten",
+        "Schaaldieren",
+        "Eieren",
+        "Vis",
+        "Pinda",
+        "Soja",
+        "Melk",
+        "Noten",
+        "Selderij",
+        "Mosterd",
+        "Sesamzaad",
+        "Zwaveldioxide",
+        "Lipine",
+        "Weekdieren"
+      ]
+    }
+  }
+}

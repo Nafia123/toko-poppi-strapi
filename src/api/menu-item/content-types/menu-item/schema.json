@@ -67,6 +67,17 @@
           "localized": false
         }
       }
+    },
+    "allergens": {
+      "displayName": "allergens",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "dish-options.allergens"
     }
   }
 }
