@@ -6,8 +6,45 @@
 
 const { createCoreController } = require('@strapi/strapi').factories;
 const stripe = require('stripe')(process.env.STRIPE_KEY);
+const emailTemplate = require('../../../../public/Email-template');
+
+const emailTemplateEN = {
+  subject: 'Thank you for your order. Toko Poppi',
+  text: `Dear <%= fullName %>,
+  Thank you for your order.
+  Your orderNumber is <%= orderNumber %>`,
+  html: emailTemplate.template
+
+}
+
+const emailTemplateNL = {
+  subject: 'Toko Poppi maaltijd bestelling',
+  text: `Beste <%= fullName %>,
+  Dankuwel voor uw bestelling.
+  U bestelnummer is <%= orderNumber %>`,
+  html: emailTemplate.template
+}
 
 module.exports = createCoreController('api::order.order', ({ strapi }) =>  ({
+    async sendConfirmEmail(ctx){
+      const { locale, attributes: {customerInformation: { fullName, email}, orderContent, orderNumber, paymentAmount}} = ctx.request.body;
+      try{
+        await strapi.plugins['email'].services.email.sendTemplatedEmail({
+            to: email,
+          }, (locale === 'nl-NL' ? emailTemplateNL : emailTemplateEN),
+          {
+            email,
+            fullName,
+            orderNumber,
+            paymentAmount,
+            orderContent: JSON.parse(orderContent)
+          }
+        );
+      }catch (e){
+        console.log(e);
+      }
+      return { suck: 'suck'};
+    },
     async startPayment(ctx){
       const { paymentAmount, email } = ctx.request.body.data;
       try{

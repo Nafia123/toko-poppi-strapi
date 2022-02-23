@@ -6,9 +6,9 @@ module.exports = {
       handler: "order.startPayment",
     },
     {
-      method: "PUT",
-      path: "/orders/payment",
-      handler: "order.updatePayment",
+      method: "POST",
+      path: "/orders/mail",
+      handler: "order.sendConfirmEmail",
     },
   ]
 }

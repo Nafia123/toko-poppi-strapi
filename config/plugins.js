@@ -13,4 +13,16 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  email: {
+    config: {
+      provider: 'sendgrid',
+      providerOptions: {
+        apiKey: env('SENDGRID_API_KEY')
+      },
+      settings: {
+        defaultFrom: 'no-reply@tokopoppi.nl',
+        defaultReplyTo: 'no-reply@tokopoppi.nl'
+      }
+    },
+  }
 });

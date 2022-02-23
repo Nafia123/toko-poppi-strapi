@@ -2,7 +2,8 @@
   "collectionName": "components_dish_options_allergens",
   "info": {
     "displayName": "allergens",
-    "icon": "fish"
+    "icon": "fish",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -23,7 +24,8 @@
         "Zwaveldioxide",
         "Lipine",
         "Weekdieren"
-      ]
+      ],
+      "required": true
     }
   }
 }
