@@ -200,13 +200,6 @@ body {font-family: 'Lato', sans-serif;}
       <tbody>
         <tr>
           <td style="padding:0px;margin:0px;border-spacing:0;"><table class="wrapper" role="module" data-type="image" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" data-muid="08a0d63f-5e25-424e-a8ee-440cb316f881">
-    <tbody>
-      <tr>
-        <td style="font-size:6px; line-height:10px; padding:0px 0px 0px 0px;" valign="top" align="center">
-          <img class="max-width" border="0" style="display:block; color:#000000; text-decoration:none; font-family:Helvetica, arial, sans-serif; font-size:16px; max-width:100% !important; width:100%; height:auto !important;" width="255" alt="" data-proportionally-constrained="true" data-responsive="true" src="http://cdn.mcauto-images-production.sendgrid.net/954c252fedab403f/1a28f2fc-8a08-4f26-8618-37485ee537d8/202x249.png">
-        </td>
-      </tr>
-    </tbody>
   </table></td>
         </tr>
       </tbody>
