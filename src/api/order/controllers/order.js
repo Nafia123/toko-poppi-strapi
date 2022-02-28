@@ -28,8 +28,6 @@ const emailTemplateNL = {
 module.exports = createCoreController('api::order.order', ({ strapi }) =>  ({
     async sendConfirmEmail(ctx){
       const { locale, attributes: {customerInformation: { fullName, email}, orderContent, orderNumber, paymentAmount}} = ctx.request.body;
-      let test = orderContent;
-      console.log(orderContent);
       try{
         await strapi.plugins['email'].services.email.sendTemplatedEmail({
             to: email,
@@ -39,7 +37,7 @@ module.exports = createCoreController('api::order.order', ({ strapi }) =>  ({
             fullName,
             orderNumber,
             paymentAmount,
-            orderContent: JSON.parse(test)
+            orderContent: orderContent
           }
         );
       }catch (e){
