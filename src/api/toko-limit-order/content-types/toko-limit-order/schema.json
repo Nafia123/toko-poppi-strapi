@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "toko_limit_orders",
+  "info": {
+    "singularName": "toko-limit-order",
+    "pluralName": "toko-limit-orders",
+    "displayName": "tokoLimitOrder",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Limit": {
+      "type": "integer"
+    }
+  }
+}

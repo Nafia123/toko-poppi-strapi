@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "pall_limit_orders",
+  "info": {
+    "singularName": "pall-limit-order",
+    "pluralName": "pall-limit-orders",
+    "displayName": "pallLimitOrder",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Limit": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
