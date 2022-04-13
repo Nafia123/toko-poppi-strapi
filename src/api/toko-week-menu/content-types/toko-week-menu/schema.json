@@ -1,0 +1,91 @@
+{
+  "kind": "singleType",
+  "collectionName": "toko_week_menus",
+  "info": {
+    "singularName": "toko-week-menu",
+    "pluralName": "toko-week-menus",
+    "displayName": "tokoWeekMenu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "monday": {
+      "displayName": "dayMenus",
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.day-menus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "tuesday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.day-menus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "wednesday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.day-menus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "thursday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.day-menus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "friday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.day-menus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "saturday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.day-menus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sunday": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.day-menus",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

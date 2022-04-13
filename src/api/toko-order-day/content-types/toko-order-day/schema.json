@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "toko_order_days",
+  "info": {
+    "singularName": "toko-order-day",
+    "pluralName": "toko-order-days",
+    "displayName": "tokoOrderDay",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "monday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "tuesday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "wednesday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "thursday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "friday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "saturday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    },
+    "sunday": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order-time.order-time"
+    }
+  }
+}

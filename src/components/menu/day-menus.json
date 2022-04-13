@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_menu_day_menus",
+  "info": {
+    "displayName": "dayMenus",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "menuItems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu-item.menu-item"
+    }
+  }
+}

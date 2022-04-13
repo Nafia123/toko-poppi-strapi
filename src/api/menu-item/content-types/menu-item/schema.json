@@ -59,7 +59,7 @@
         }
       }
     },
-    "visible": {
+    "pallVisible": {
       "type": "boolean",
       "default": false,
       "pluginOptions": {
